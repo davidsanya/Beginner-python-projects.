@@ -2,7 +2,7 @@
 """
 Created on Thu Sep 12 19:36:01 2024
 
-@author: user
+@author: davidsanya
 """
 import random 
 print("welcome to the Number Guessing Game!\n\nI'm thinking of a number between 1 and 100")
