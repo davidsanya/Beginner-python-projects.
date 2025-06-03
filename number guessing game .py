@@ -4,11 +4,13 @@ Created on Thu Sep 12 19:36:01 2024
 
 @author: davidsanya
 """
+"""This module is a guessing game where users try to guess the randomly selected computer number"""
 import random 
 print("welcome to the Number Guessing Game!\n\nI'm thinking of a number between 1 and 100")
 print("\nplease select the difficulty level\n\n1. Easy (10 chances)\n2. Medium (5 chances)\n3. Hard (3 chances) ")
 def game():
-    choice=input("\nEnter your choice: ")
+    """Create a number randomiser and collect user's choice"""
+    choice=input("\nEnter your choice: ") 
     
     computerguess=random.randint(1,100)
    
@@ -21,7 +23,7 @@ def game():
                 print("you win")
                 break 
                 playagain=input("would you like to play again yes/no:")
-                if playagain=="yes"and "YES":
+                If playagain=="yes" and "YES":
                     game()
             elif makeinteger>computerguess:
              print(f"incorrect! the number is less than {makeinteger}")
@@ -70,7 +72,7 @@ def game():
         else:
             print("you lose") 
             playagain=input("would you like to play again yes/no:")
-        if playagain=="yes"and "YES":
+        if playagain=="yes" and "YES":
             game()
         
     
